@@ -1,0 +1,10 @@
+Jurnal,Stiri,1,jbheb
+Reportaj,Informare,2,Viata la sat
+Divertisment,Film,2,5 Sense
+Meci,Sport,2,Live
+Documentar,Educatie,1,Natura
+TalkShow,Stiri,1,Politica
+Desene,Copii,1,Tom si Jerry
+Serial,Film,1,Actiune
+Muzica,Divertisment,3,Top 40
+Gatit,Lifestyle,1,Retete noi

@@ -1,0 +1,16 @@
+ffff,Ana,Altele,68
+Hana,Ana,Comedie,35
+Dorel,Costel,Comedie,150
+Poir,Gabi,Drama,85
+Haur,Ion,Comedie,131
+Porumb,Ion,Drama,180
+Stiri,Kevin,Altele,60
+Bara,Kopi,Satira,130
+eeee,Marcel,Satira,98
+Ionica,Paul,Altele,3
+Marvel,Paul,Drama,56
+dddd,Paul,Satira,67
+Ionica,Paula,Comedie,120
+Hybrid,Raul,Altele,124
+bbbb,Suzi,Comedie,99
+Magazin,Teodor,Satira,230

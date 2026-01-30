@@ -1,0 +1,10 @@
+bbbb,Paul,Rock,13
+aaaa,Marcel,Rock,163
+bbbb,Costel,Pop,237
+dddd,Paul,Altele,180
+bbbb,Suzi,Pop,152
+bbbb,Raul,Jazz,122
+eeee,Paul,Jazz,201
+aaaa,Raul,Altele,128
+bbbb,Marcel,Pop,140
+dddd,Costel,Rock,95
