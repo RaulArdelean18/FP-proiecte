@@ -3,7 +3,6 @@ from Repository.Repo import CartiRepo
 from UI.ui import Console
 from Teste.teste import Teste
 
-
 def main():
     try:
         tester = Teste()

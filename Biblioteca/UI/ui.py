@@ -5,6 +5,7 @@ class Console:
     def __init__(self,srv):
         self.__srv=srv
 
+
     def __print_lista(self):
         f_text, f_an = self.__srv.get_filtru_current()
         print(f"\n--- Filtru curent: Text='{f_text}', An < {f_an} ---")

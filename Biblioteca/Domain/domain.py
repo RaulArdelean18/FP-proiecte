@@ -5,6 +5,7 @@ class Carte:
         self.__autor = autor
         self.__anAparitie = an_aparitie
 
+
     #Gettere
 
     @property

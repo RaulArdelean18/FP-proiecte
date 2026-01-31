@@ -43,6 +43,9 @@ class RepoMagazin:
         :return: nothing
         """
         #print(f"repo {id_key}")
+        for item in self.__lista:
+            if item.id == id_key:
+                raise Exception(f'Item {id_key} already exists')
         self.__lista.append(Produs(id_key,denumire,pret))
         self.save_to_file()
 

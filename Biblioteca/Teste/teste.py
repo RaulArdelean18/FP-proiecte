@@ -1,7 +1,6 @@
 from Repository.Repo import CartiRepo
 from Service.service import CartiService, CartiError
 
-
 class Teste:
     def __init__(self):
         self.__test_file=("test_data.txt")

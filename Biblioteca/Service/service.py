@@ -3,6 +3,7 @@ from Repository.Repo import *
 class CartiError(Exception):
     pass
 
+
 class CartiService:
     def __init__(self, repo):
         self.__repo = repo

@@ -2,6 +2,7 @@ import unittest
 from repository.repo import RepoMagazin
 from Service.service import Service, ProduseError
 from utils.file_utils import clear_file_content, copy_file_content
+from validator.validator import ValidatorMagazin
 
 class TesteMagazin(unittest.TestCase):
     def setUp(self):
@@ -12,7 +13,8 @@ class TesteMagazin(unittest.TestCase):
                 f.write("1,Mere,3.53\n")
             copy_file_content("data_default.txt", "test_data.txt")
         self.repo = RepoMagazin("test_data.txt")
-        self.service = Service(self.repo)
+        self.validator = ValidatorMagazin()
+        self.service = Service(self.repo,self.validator)
 
     def tearDown(self):
         clear_file_content("test_data.txt")
@@ -34,7 +36,7 @@ class TesteMagazin(unittest.TestCase):
         """
         self.service.adaugare("1", "Mere", 3.53)
 
-        with self.assertRaises(ProduseError):
+        with self.assertRaises(Exception):
             self.service.adaugare("1", "Pere", 3.42)
 
     def test_delete(self):
@@ -55,6 +57,11 @@ class TesteMagazin(unittest.TestCase):
         self.assertEqual(len(repo2.get_all()), 2)
         for item in repo2.get_all():
             self.assertNotEqual(item.id,"3")
+
+        self.service.adaugare("323","Tuica",13.49)
+        self.service.stergere("3")
+
+        self.assertEqual(len(self.service.filter_operation()), 2)
 
     def test_undo(self):
         """
